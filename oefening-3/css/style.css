@@ -10,7 +10,7 @@ body {
 
 ul {
   list-style-image: url("/images/listIcon.png");
-  font-size: 1.5em;
+  font-size: 25px;
   opacity: 76%;
 }
 
@@ -18,6 +18,12 @@ ul li > a {
   color: red;
   font-weight: bold;
   text-decoration: none;
+  transition: all 300ms ease-out;
+}
+
+ul li > a:hover {
+  font-size: 27px;
+  color: green;
 }
 
 header > nav {
@@ -37,9 +43,7 @@ footer > section {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
   font-size: small;
-  height: 7vh;
 }
 
 header,
@@ -47,6 +51,22 @@ main,
 footer {
   width: 81vw;
   margin: 0 auto;
+}
+
+footer > section {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer > section p {
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 15px;
 }
 
 article {
@@ -65,9 +85,9 @@ span {
   font-style: italic;
 }
 
-.over-ons p,
-.over-ons > h2 {
-  margin: 15px 10px;
+article div > h2,
+article div > p {
+  margin: 20px 20px;
 }
 
 .logo {
@@ -82,4 +102,17 @@ span {
 .bron > a {
   color: black;
   text-decoration: underline dotted;
+}
+
+.image {
+  margin: 20px 0px 20px 20px;
+  width: 180px;
+}
+
+.eight-man {
+  text-decoration: underline wavy red;
+}
+
+.stardust-img {
+  float: left;
 }
